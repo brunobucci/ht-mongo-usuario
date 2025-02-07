@@ -1,10 +1,6 @@
-db = db.getSiblingDB('usuario'); // Cria ou acessa o banco 
+db = db.getSiblingDB('Hackathon'); // Cria ou acessa o banco 
 
-// Criação de coleções e inserção de dados
-db.usuarios.insertMany([
-    { nome: "Bruno", email: "bruno@email.com" },
-    { nome: "Marcelo", email: "marcelo@email.com" },
-    { nome: "Pedro", email: "pedro@email.com" }
-]);
+// Criação da coleção "usuario" sem inserir documentos
+db.createCollection("usuario");
 
 print("Banco de dados e coleções configurados com sucesso!");

@@ -4,9 +4,9 @@ db = db.getSiblingDB('Hackathon'); // Cria ou acessa o banco
 db.createCollection("usuario");
 
 db.createUser({
-    user: "soat7grupo5",
-    pwd: "Hc9YCOqLHPsKvf7e",
-    roles: [{ role: "root", db: "Hackathon" }]
+  user: "soat7grupo5",
+  pwd: "Hc9YCOqLHPsKvf7e",
+  roles: [{ role: "root", db: "Hackathon" }]
 });
 
 print("Banco de dados e coleções configurados com sucesso!"); 
